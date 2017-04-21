@@ -1,4 +1,4 @@
-@extends('layout.default')
+@extends('layouts.default')
 @section('content')
-    <h1>zhuye</h1>s
-    @stop
+    <h1>zhuye</h1>
+@stop
