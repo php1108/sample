@@ -1,0 +1,39 @@
+Arguments: 
+  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /home/vagrant/.composer/vendor/bin:/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  0.23.2
+
+Node version: 
+  6.10.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "private": true,
+    "devDependencies": {
+      "gulp": "^3.8.8"
+    },
+    "dependencies": {
+      "laravel-elixir": "^4.0.0",
+      "bootstrap-sass": "^3.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/bootstrap-sass: ETIMEDOUT
+      at Timeout._onTimeout (/usr/share/yarn/node_modules/request/request.js:852:19)
+      at ontimeout (timers.js:365:14)
+      at tryOnTimeout (timers.js:237:5)
+      at Timer.listOnTimeout (timers.js:207:5)
