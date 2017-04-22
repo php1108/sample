@@ -43,3 +43,4 @@ GET	/login	SessionsController@create	显示登录页面
 POST	/login	SessionsController@store	创建新会话（登录）
 DELETE	/logout	SessionsController@destroy	销毁会话（退出登录）
  */
+get('signup/confirm/{token}', 'UserController@confirmEmail')->name('confirm_email');
