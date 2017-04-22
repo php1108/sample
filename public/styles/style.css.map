@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/button.scss","app.scss"],"names":[],"mappings":"AAAA;EACE,WAAU,EACX;;ACCD;EACC,gBAAgB,EAChB","file":"style.css","sourcesContent":["button{\r\n  color:red;\r\n}","//@import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\n@import \"components/button\";\n\np{\n font-size: 10px;\n}\n"]}
