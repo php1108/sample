@@ -44,3 +44,14 @@ POST	/login	SessionsController@store	创建新会话（登录）
 DELETE	/logout	SessionsController@destroy	销毁会话（退出登录）
  */
 get('signup/confirm/{token}', 'UserController@confirmEmail')->name('confirm_email');
+get('password/email', 'Auth\PasswordController@getEmail')->name('password.reset');
+post('password/email', 'Auth\PasswordController@postEmail')->name('password.reset');
+get('password/reset/{token}', 'Auth\PasswordController@getReset')->name('password.edit');
+post('password/reset', 'Auth\PasswordController@postReset')->name('password.update');
+/**
+ * HTTP 请求	URL	动作	作用
+GET	/password/email	Auth\PasswordController@getEmail	显示重置密码的邮箱发送页面
+POST	/password/email	Auth\PasswordController@postEmail	处理重置密码的邮箱发送操作
+GET	/password/reset/{token}	Auth\PasswordController@getReset	显示重置密码的密码更新页面
+POST	/password/reset	Auth\PasswordController@postReset	显示重置密码的密码更新请求
+ */

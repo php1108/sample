@@ -188,3 +188,8 @@ input {
   position: relative;
   right: 0;
 }
+/* universal */
+
+.alert-status {
+  @extend .alert-info;
+}
