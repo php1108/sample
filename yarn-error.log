@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js
+  /usr/bin/nodejs /usr/share/yarn/bin/yarn.js add jquery --save
 
 PATH: 
   /home/vagrant/.composer/vendor/bin:/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -20,9 +20,15 @@ npm manifest:
       "gulp": "^3.8.8"
     },
     "dependencies": {
-      "laravel-elixir": "^4.0.0",
-      "bootstrap-sass": "^3.0.0"
-    }
+      "bootstrap-sass": "^3.0.0",
+      "laravel-elixir": "^4.0.0"
+    },
+    "name": "sample",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:php1108/sample.git",
+    "author": "zhou <php1108@126.com>",
+    "license": "MIT"
   }
 
 yarn manifest: 
@@ -6247,5 +6253,5 @@ Lockfile:
     resolved "http://registry.npm.taobao.org/yeast/download/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
 Trace: 
-  Error: EPROTO: protocol error, symlink '../../../semver/bin/semver' -> '/home/vagrant/Code/Sample/node_modules/accord/node_modules/.bin/semver'
+  Error: EPROTO: protocol error, symlink '../../../semver/bin/semver' -> '/home/vagrant/Code/sample/node_modules/accord/node_modules/.bin/semver'
       at Error (native)

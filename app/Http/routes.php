@@ -32,3 +32,14 @@ resource('users','UserController');
 //GET	/users/{id}/edit	UsersController@edit	编辑用户个人资料的页面
 //PATCH	/users/{id}	UsersController@update	更新用户
 //DELETE	/users/{id}	UsersController@destroy	删除用户
+get('login', 'SessionsController@create')->name('login');
+post('login', 'SessionsController@store')->name('login');
+delete('logout', 'SessionsController@destroy')->name('logout');
+/**
+ * 新增的路由功能如下。
+
+HTTP 请求	URL	动作	作用
+GET	/login	SessionsController@create	显示登录页面
+POST	/login	SessionsController@store	创建新会话（登录）
+DELETE	/logout	SessionsController@destroy	销毁会话（退出登录）
+ */
