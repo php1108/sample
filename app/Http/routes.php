@@ -63,3 +63,20 @@ HTTP 请求	URL	动作	作用
 POST	/statuses	StatusesController@store	处理创建创建微博的请求
 DELETE	/statuses	StatusesController@destroy	处理删除微博的请求
  */
+/**
+ * 关注人列表和粉丝列表进行显示。
+ * HTTP 请求	URL	动作	作用
+GET	/users/{id}/followings	UsersController@followings	显示用户的关注人列表
+GET	/users/{id}/followers	UsersController@followers	显示用户的粉丝列表
+ */
+get('/users/{id}/followings', 'UserController@followings')->name('users.followings');
+get('/users/{id}/followers', 'UserController@followers')->name('users.followers');
+/**
+ * 对应的路由信息如下：
+
+HTTP 请求	URL	动作	作用
+POST	/users/followers/{id}	FollowersController@store	关注用户
+DELETE	/users/followers/{id}	FollowersController@destroy	取消关注用户
+ */
+post('/users/followers/{id}', 'FollowersController@store')->name('followers.store');
+delete('/users/followers/{id}', 'FollowersController@destroy')->name('followers.destroy');
