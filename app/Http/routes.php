@@ -55,3 +55,11 @@ POST	/password/email	Auth\PasswordController@postEmail	处理重置密码的邮�
 GET	/password/reset/{token}	Auth\PasswordController@getReset	显示重置密码的密码更新页面
 POST	/password/reset	Auth\PasswordController@postReset	显示重置密码的密码更新请求
  */
+resource('statuses', 'StatusesController', ['only' => ['store', 'destroy']]);
+/**
+ * 该路由列表信息如下所示：
+
+HTTP 请求	URL	动作	作用
+POST	/statuses	StatusesController@store	处理创建创建微博的请求
+DELETE	/statuses	StatusesController@destroy	处理删除微博的请求
+ */
