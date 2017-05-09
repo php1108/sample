@@ -67,7 +67,7 @@ class UserController extends Controller
     {
         $view = 'emails.confirm';
         $data = compact('user');
-        $from = 'aufree@estgroupe.com';
+        $from = '916462392@qq.com';
         $name = 'Aufree';
         $to = $user->email;
         $subject = "感谢注册 Sample 应用！请确认你的邮箱。";
